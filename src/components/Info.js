@@ -12,34 +12,34 @@ import twitterIcon from '@iconify/icons-mdi/twitter'
 import '../App.css'
 
 const contactDetails = [
-  {
-    value: '1600 Amphitheatre Parkway, Mountain View, california.',
+{
+    value: '1, Ogoja road, Abakaliki, Ebonyi State.',
     icon: locationIcon,
-  },
-  { value: '+1 234 567 8900', icon: phoneIcon },
-  { value: 'support@example.com', icon: emailIcon },
+},
+{ value: '+1 234 567 8900', icon: phoneIcon },
+{ value: 'support@example.com', icon: emailIcon },
 ]
 
 const renderContactDetails = () =>
-  contactDetails.map(detail => (
+contactDetails.map(detail => (
     <p key={detail.value} className="info-detail">
-      <InlineIcon icon={detail.icon} /> {detail.value}
+    <InlineIcon icon={detail.icon} /> {detail.value}
     </p>
-  ))
+))
 
 const renderIcons = () =>
-  [facebookIcon, linkedinIcon, twitterIcon].map((icon, key) => (
+[facebookIcon, linkedinIcon, twitterIcon].map((icon, key) => (
     <Icon icon={icon} key={key} className="info-icon" />
-  ))
+))
 
 const Info = () => (
-  <section className="info">
+<section className="info">
     <h2 className="info-h2">Contact information</h2>
 
     <div className="info-details-container">{renderContactDetails()}</div>
 
     <div className="info-icons-container">{renderIcons()}</div>
-  </section>
+</section>
 )
 
 export default Info

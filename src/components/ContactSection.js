@@ -6,12 +6,12 @@ import Info from './Info'
 import '../App.css'
 
 const ContactSection = () => (
-  <>
+<>
     <div className="contact-section">
-      <Form />
-      <Info />
+    <Form />
+    <Info />
     </div>
-  </>
+</>
 )
 
 export default ContactSection;

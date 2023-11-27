@@ -3,11 +3,11 @@ import React from 'react'
 import '../App.css'
 
 const Footer = () => (
-  <div className="footer">
+<div className="footer">
     <p className="footer-copyright">
-      &copy; Sample Inc. {new Date().getFullYear()}
+    &copy; Sample Inc. {new Date().getFullYear()}
     </p>
-  </div>
+</div>
 )
 
 export default Footer;
